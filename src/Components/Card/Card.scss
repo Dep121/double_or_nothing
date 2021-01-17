@@ -1,0 +1,78 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 15px;
+  width: 180px;
+  height: 200px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 4px #adadad;
+
+  &-win {
+    border: 2px solid #005c01;
+    width: 200px;
+    height: 250px;
+    box-shadow: 10px 10px 8px #888888;
+
+  }
+  &-lose {
+    border: 2px solid #af0000;
+  }
+
+  .userInfo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+    .avatar {
+      border-radius: 10px;
+      margin-right: 10px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      .name {
+        font-weight: bold;
+      }
+      .level {
+        font-weight: 300;
+      }
+    }
+  }
+
+  .scores {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    & > div {
+      margin-right: 25%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .status {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 70%;
+    text-align: center;
+    left: 15%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &-win {
+      background-color: #005c01;
+    }
+    &-lose {
+      background-color: #af0000;
+    }
+  }
+}

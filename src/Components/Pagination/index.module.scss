@@ -1,0 +1,21 @@
+.pagination{
+  .pageNumbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .pageNumberBox{
+      margin-right: 10px;
+      padding: 5px;
+      cursor: grab;
+    }
+
+    .active{
+      color: blue;
+      background-color: #b6eff1;
+      border: 2px solid #032055;
+      border-radius: 10px;
+    }
+  }
+}

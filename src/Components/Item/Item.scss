@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+  }
+  .select {
+    width: 50px;
+  }
+  .name {
+    flex: 4;
+    text-align: left;
+  }
+  .level {
+    flex: 1;
+  }
+  .bet {
+    flex: 1;
+  }
+  .wins {
+    flex: 1;
+  }
+  .lost {
+    flex: 1;
+  }
+  .price {
+    flex: 2;
+  }
+  .avatar {
+    flex: 1;
+    padding: 10px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
